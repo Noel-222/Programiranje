@@ -7,7 +7,7 @@ print("2. Izračun otpora")
 print("3. Izračun jakosti")
 print("4. Izračun serijskih i paralelnih otpora")
 print("----------------------")
-while True:
+while True:        # Petlja
     opcija=int(input("Izaberite opciju (1. / 2. / 3. / 4. ): "))
     # Struktura grananja
     if opcija == 1:     # == , != , <> , <= , >=
@@ -29,7 +29,7 @@ while True:
         jakost = napon/otpor
         print(f"Jakost struje je: {jakost} A")
     elif opcija == 4:
-        sip=input("Jesu li otpornici u seriji ili paraleli? (seriji , paraleli): ")
+        sip=input("Jesu li otpornici u seriji ili paraleli? (seriji , paraleli): ")    #pita korisnika jesu li otpornici u paraleli ili seriji
         if sip == "seriji":
             otpor1=int(input("Upiši otpor prvog otpornika: "))
             otpor2=int(input("Upiši otpor drugog otpornika: "))
@@ -45,6 +45,7 @@ while True:
     else:
         print("Pogrešan unos..")
 
-    ponovo=input("Želiš li ponoviti? (da / ne): ")
-    if ponovo != "da":
+    ponovo=input("Želiš li ponoviti? (da / ne): ")    
+    if ponovo != "da":    # Ako je odgovor da ponavlja sve unutar petlje , a ako je odgovor ne završava kod
         break
+
