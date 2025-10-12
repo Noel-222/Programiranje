@@ -4,6 +4,7 @@ glavni_prozor = tk.Tk()
 glavni_prozor.title("Glavni prozor")
 glavni_prozor['bg'] = "#21201d"
 glavni_prozor.minsize(500, 300)
+glavni_prozor.maxsize(500, 300)
 
 n = 0
 
@@ -48,3 +49,4 @@ dugme2.place(x=30 , y=150)
 dugme.place(x=270 , y=150)
 
 glavni_prozor.mainloop()
+
